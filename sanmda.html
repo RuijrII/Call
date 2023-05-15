@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    .login-form {
+      background-color: #f2f2f2;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-align: center;
+    }
+    
+    input[type="password"] {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    button {
+      background-color: #ffffff;
+      color: #3c4043;
+      font-size: 14px;
+      padding: 10px 20px;
+      border: 1px solid #dadce0;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-form">
+    <h1>Login</h1>
+    <input type="password" id="passwordInput" placeholder="Senha">
+    <button id="loginButton">Entrar</button>
+  </div>
+  
+  <script>
+    const passwordInput = document.getElementById('passwordInput');
+    const loginButton = document.getElementById('loginButton');
+    
+    loginButton.addEventListener('click', function() {
+      const password = passwordInput.value;
+      
+      if (password === 'Teste disc') {
+        const videoCallUrl = 'file:///home/chronos/u-deacca3effe2a9bc1c84fb20c96ff9ed245e0f96/MyFiles/Downloads/Projeto%203/src/index2.html';
+        window.open(videoCallUrl, '_blank', 'width=800,height=600');
+      } else {
+        alert('Senha incorreta. Tente novamente.');
+      }
+    });
+  </script>
+</body>
+</html>
